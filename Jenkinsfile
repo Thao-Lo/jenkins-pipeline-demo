@@ -11,7 +11,7 @@ pipeline {
 
         stage('Unit and Integration Tests') {
             steps {
-                echo 'Running JUnit and Selenium tests'
+                echo 'Running JUnit and Mockito tests'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
 
         stage('Security Scan') {
             steps {
-                echo 'Scanning vulnerabilities using OWASP Dependency-Check'
+                echo 'Scanning vulnerabilities using Snyk'
             }
         }
 
